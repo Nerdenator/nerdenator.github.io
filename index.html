@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Welcome to my homepage.</title>
+    <title>Welcome to My Homepage.</title>
     <!-- JQuery 1.12.0.min.js -->
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <!-- Latest compiled and minified CSS -->
@@ -15,7 +15,7 @@
     <script>
         //make buttons retract and expand divs above here
         //about me should be visible onload, rest should be hidden.
-        $( document ).ready(function() {
+        $(document).ready(function() {
             // Handler for .ready() called.
             $("#aboutme").show();
             $("#resume").hide();
@@ -23,54 +23,80 @@
             $("#research").hide();
             $("#projects").hide();
             $("#contact").hide();
+            document.getElementById("sectionHeader").innerHTML = "<h1>About Me</h1>";
+            document.title = 'Welcome to My Homepage.';
         });
         function toggleAboutMe(){
+            $(document).ready(function() {
+                document.title = 'Welcome to My Homepage.';
+            });
             $("#aboutme").show();
             $("#resume").hide();
             $("#code").hide();
             $("#research").hide();
             $("#projects").hide();
             $("#contact").hide();
+            document.getElementById("sectionHeader").innerHTML = "<h1>About Me</h1>";
         }
         function toggleResume(){
+            $(document).ready(function() {
+                document.title = 'My Resume';
+            });
             $("#aboutme").hide();
             $("#resume").show();
             $("#code").hide();
             $("#research").hide();
             $("#projects").hide();
             $("#contact").hide();
+            document.getElementById("sectionHeader").innerHTML = "<h1>My Resume</h1>";
         }
         function toggleCode(){
+            $(document).ready(function() {
+                document.title = 'My Code';
+            });
             $("#aboutme").hide();
             $("#resume").hide();
             $("#code").show();
             $("#research").hide();
             $("#projects").hide();
             $("#contact").hide();
+            document.getElementById("sectionHeader").innerHTML = "<h1>My Code</h1>";
         }
         function toggleResearch(){
+            $(document).ready(function() {
+                document.title = 'My Research';
+            });
             $("#aboutme").hide();
             $("#resume").hide();
             $("#code").hide();
             $("#research").show();
             $("#projects").hide();
             $("#contact").hide();
+            document.getElementById("sectionHeader").innerHTML = "<h1>My Research</h1>";
         }
         function toggleProjects(){
+            $(document).ready(function() {
+                document.title = 'My Projects';
+            });
             $("#aboutme").hide();
             $("#resume").hide();
             $("#code").hide();
             $("#research").hide();
             $("#projects").show();
             $("#contact").hide();
+            document.getElementById("sectionHeader").innerHTML = "<h1>My Projects</h1>";
         }
         function toggleContact(){
+            $(document).ready(function() {
+                document.title = 'My Contact Info';
+            });
             $("#aboutme").hide();
             $("#resume").hide();
             $("#code").hide();
             $("#research").hide();
             $("#projects").hide();
             $("#contact").show();
+            document.getElementById("sectionHeader").innerHTML = "<h1>My Contact Info</h1>";
         }
     </script>
   </head>
@@ -85,31 +111,47 @@
         <button type="button" class="btn btn-info btn-lg" onclick="toggleProjects()">Projects</button>
         <button type="button" class="btn btn-info btn-lg" onclick="toggleContact()">Contact</button>
       </div>
+      <hr/>
+      <div id = "sectionHeader">
+          
+      </div>
+      <hr/>
       <!-- about me-->
       <div id = "aboutme" >
-          <h1>About Me</h1>
+          
       </div>
       <!-- resume -->
       <div id = "resume">
-          <h1>My Resume</h1>
+          
       </div>
       <!-- code -->
       <div id = "code">
-          <h1>My Code</h1>
+          
       </div>
       <!-- research -->
       <div id = "research">
-          <h1>My Research</h1>
+          
       </div>
       <!-- projects -->
       <div id = "projects">
-          <h1>My Projects</h1>
+          
       </div>
       <!-- contact -->
       <div id = "contact">
-          <h1>Contact Information</h1>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Social Media</h2>
+                <ul>
+                    <li>Google+</li>
+                    <li>Twitter</li>
+                    <li>GitHub</li>
+                    <li>LinkedIn</li>
+                </ul>
+            </div>
+            <div class="col-sm-6">.col-sm-6</div>
+        </div>             
       </div>
+      
     </div>
-    
   </body>
 </html>
