@@ -2,43 +2,47 @@
 <html>
   <head>
     <title>Welcome to my homepage.</title>
+    <!-- JQuery 1.12.0.min.js -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <!-- JQuery 1.12.0.min.js -->
-    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <!-- JQuery UI 1.11 -->
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script>
+        //make buttons retract and expand divs above here
+        
+    </script>
   </head>
   <body>
     <div class="container">
       <!--label for aaronmcruer.com here, to left of button group-->
       <div class="btn-group btn-group-justified" role="group">
-        <a href="#" class="btn btn-default" role="button">About Me</a>
-        <a href="#resume" class="btn btn-default" role="button">Resume</a>
-        <a href="#code" class="btn btn-default" role="button">Code</a>
-        <a href="#research" class="btn btn-default" role="button">Research</a>
-        <a href="#projects" class="btn btn-default" role="button">Projects</a>
-        <a href="#contact" class="btn btn-default" role="button">Contact</a>
+        <a href="#landing" class="btn btn-default" role="button">Main</a>
+        <a href="#aboutme" class="btn btn-default" role="button" onclick="showAboutMe">About Me</a>
+        <a href="#resume" class="btn btn-default" role="button" onclick="showResume">Resume</a>
+        <a href="#code" class="btn btn-default" role="button" onclick="showCode">Code</a>
+        <a href="#research" class="btn btn-default" role="button" onclick="showResearch">Research</a>
+        <a href="#projects" class="btn btn-default" role="button" onclick="showProjects">Projects</a>
+        <a href="#contact" class="btn btn-default" role="button" onclick="showContact">Contact</a>
       </div>
+      <div id = "landing">landing</div>
       <!--about me-->
-      <div id = "#">hello world</div>
+      <div id = "aboutme" hidden>about me</div>
       <!-- resume -->
-      <div id = "resume">resume</div>
+      <div id = "resume" hidden>resume</div>
       <!-- code -->
-      <div id = "code">code</div>
+      <div id = "code" hidden>code</div>
       <!-- research -->
-      <div id = "research">research</div>
+      <div id = "research" hidden>research</div>
       <!-- projects -->
-      <div id = "projects">projects</div>
+      <div id = "projects" hidden>projects</div>
       <!-- contact -->
-      <div id = "contact">contact</div>
+      <div id = "contact" hidden>contact</div>
     </div>
-    <script>
-        //make buttons retract and expand divs above here
-    </script>
+    
   </body>
 </html>
