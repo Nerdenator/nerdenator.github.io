@@ -14,24 +14,31 @@
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <script>
         //make buttons retract and expand divs above here
-        
+        //about me should be visible onload, rest should be hidden.
+        $( document ).ready(function() {
+            // Handler for .ready() called.
+            $("#aboutme").show();
+            $("#resume").hide();
+            $("#code").hide();
+            $("#research").hide();
+            $("#projects").hide();
+            $("#contact").hide();
+        });
     </script>
   </head>
   <body>
     <div class="container">
       <!--label for aaronmcruer.com here, to left of button group-->
-      <div class="btn-group btn-group-justified" role="group">
-        <a href="#landing" class="btn btn-default" role="button">Main</a>
-        <a href="#aboutme" class="btn btn-default" role="button" onclick="showAboutMe">About Me</a>
-        <a href="#resume" class="btn btn-default" role="button" onclick="showResume">Resume</a>
-        <a href="#code" class="btn btn-default" role="button" onclick="showCode">Code</a>
-        <a href="#research" class="btn btn-default" role="button" onclick="showResearch">Research</a>
-        <a href="#projects" class="btn btn-default" role="button" onclick="showProjects">Projects</a>
-        <a href="#contact" class="btn btn-default" role="button" onclick="showContact">Contact</a>
+      <div>
+        <button type="button" class="btn btn-info btn-lg">About Me</button>
+        <button type="button" class="btn btn-info btn-lg">Resume</button>
+        <button type="button" class="btn btn-info btn-lg">Code</button>
+        <button type="button" class="btn btn-info btn-lg">Research</button>
+        <button type="button" class="btn btn-info btn-lg">Projects</button>
+        <button type="button" class="btn btn-info btn-lg">Contact</button>
       </div>
-      <div id = "landing">landing</div>
-      <!--about me-->
-      <div id = "aboutme">about me</div>
+      <!-- about me-->
+      <div id = "aboutme" >about me</div>
       <!-- resume -->
       <div id = "resume">resume</div>
       <!-- code -->
