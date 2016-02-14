@@ -16,7 +16,7 @@ $(document).ready(function() {
     $("#contact").hide();
     document.getElementById("sectionHeader").innerHTML = "<h1>About Me</h1>";
     document.title = 'Welcome to My Homepage.';
-    //document.getElementById("aboutMeButton").className="active";
+    
 });
 function toggleAboutMe(){
     $(document).ready(function() {
@@ -29,7 +29,7 @@ function toggleAboutMe(){
     $("#projects").hide();
     $("#contact").hide();
     document.getElementById("sectionHeader").innerHTML = "<h1>About Me</h1>";
-    //document.getElementById("aboutMeButton").className="active";
+    
 }
 function toggleResume(){
     $(document).ready(function() {
@@ -42,7 +42,7 @@ function toggleResume(){
     $("#projects").hide();
     $("#contact").hide();
     document.getElementById("sectionHeader").innerHTML = "<h1>My Resume</h1>";
-    //document.getElementById("resumeButton").className="active";
+    
 }
 function toggleCode(){
     $(document).ready(function() {
@@ -55,7 +55,7 @@ function toggleCode(){
     $("#projects").hide();
     $("#contact").hide();
     document.getElementById("sectionHeader").innerHTML = "<h1>My Code</h1>";
-    //document.getElementById("codeButton").className="active";
+    
 }
 function toggleProjects(){
     $(document).ready(function() {
@@ -68,7 +68,7 @@ function toggleProjects(){
     $("#projects").show();
     $("#contact").hide();
     document.getElementById("sectionHeader").innerHTML = "<h1>My Projects</h1>";
-    //document.getElementById("projectsButton").className="active";
+    
 }
 function toggleContact(){
     $(document).ready(function() {
@@ -81,6 +81,6 @@ function toggleContact(){
     $("#projects").hide();
     $("#contact").show();
     document.getElementById("sectionHeader").innerHTML = "<h1>My Contact Info</h1>";
-    //document.getElementById("contactButton").className="active";
+    
 }
 
