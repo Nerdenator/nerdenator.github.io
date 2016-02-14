@@ -83,3 +83,4 @@ function toggleContact(){
     document.getElementById("sectionHeader").innerHTML = "<h1>My Contact Info</h1>";
     //document.getElementById("contactButton").className="active";
 }
+
