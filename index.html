@@ -25,6 +25,7 @@
             $("#contact").hide();
             document.getElementById("sectionHeader").innerHTML = "<h1>About Me</h1>";
             document.title = 'Welcome to My Homepage.';
+            //document.getElementById("aboutMeButton").className="active";
         });
         function toggleAboutMe(){
             $(document).ready(function() {
@@ -37,6 +38,7 @@
             $("#projects").hide();
             $("#contact").hide();
             document.getElementById("sectionHeader").innerHTML = "<h1>About Me</h1>";
+            //document.getElementById("aboutMeButton").className="active";
         }
         function toggleResume(){
             $(document).ready(function() {
@@ -49,6 +51,7 @@
             $("#projects").hide();
             $("#contact").hide();
             document.getElementById("sectionHeader").innerHTML = "<h1>My Resume</h1>";
+            //document.getElementById("resumeButton").className="active";
         }
         function toggleCode(){
             $(document).ready(function() {
@@ -61,18 +64,7 @@
             $("#projects").hide();
             $("#contact").hide();
             document.getElementById("sectionHeader").innerHTML = "<h1>My Code</h1>";
-        }
-        function toggleResearch(){
-            $(document).ready(function() {
-                document.title = 'My Research';
-            });
-            $("#aboutme").hide();
-            $("#resume").hide();
-            $("#code").hide();
-            $("#research").show();
-            $("#projects").hide();
-            $("#contact").hide();
-            document.getElementById("sectionHeader").innerHTML = "<h1>My Research</h1>";
+            //document.getElementById("codeButton").className="active";
         }
         function toggleProjects(){
             $(document).ready(function() {
@@ -85,6 +77,7 @@
             $("#projects").show();
             $("#contact").hide();
             document.getElementById("sectionHeader").innerHTML = "<h1>My Projects</h1>";
+            //document.getElementById("projectsButton").className="active";
         }
         function toggleContact(){
             $(document).ready(function() {
@@ -97,21 +90,24 @@
             $("#projects").hide();
             $("#contact").show();
             document.getElementById("sectionHeader").innerHTML = "<h1>My Contact Info</h1>";
+            //document.getElementById("contactButton").className="active";
         }
     </script>
   </head>
   <body>
     <div class="container">
       <!--label for aaronmcruer.com here, to left of button group-->
-      <div>
-        <button type="button" class="btn btn-info btn-lg" onclick="toggleAboutMe()">About Me</button>
-        <button type="button" class="btn btn-info btn-lg" onclick="toggleResume()">Resume</button>
-        <button type="button" class="btn btn-info btn-lg" onclick="toggleCode()">Code</button>
-        <button type="button" class="btn btn-info btn-lg" onclick="toggleResearch()">Research</button>
-        <button type="button" class="btn btn-info btn-lg" onclick="toggleProjects()">Projects</button>
-        <button type="button" class="btn btn-info btn-lg" onclick="toggleContact()">Contact</button>
+      <div class="row">
+        <div class="col-sm-2">aaronmcruer.com</div>
+        <div class="col-sm-10">
+            <button class="btn btn-lg" type="button" role="presenation" onclick="toggleAboutMe()" id="aboutMeButton">About Me</button>
+            <button class="btn btn-lg" type="button" role="presenation" onclick="toggleResume()" id="resumeButton">Resume</button>
+            <button class="btn btn-lg" type="button" role="presenation" onclick="toggleCode()" id="codeButton">Code</button>
+            <button class="btn btn-lg" type="button" role="presenation" onclick="toggleProjects()" id="projectsButton">Projects</button>
+            <button class="btn btn-lg" type="button" role="presenation" onclick="toggleContact()" id="contactButton">Contact</button>
+        </div>
       </div>
-      <hr/>
+      <!--<hr/>-->
       <div id = "sectionHeader">
           
       </div>
@@ -128,30 +124,44 @@
       <div id = "code">
           
       </div>
-      <!-- research -->
-      <div id = "research">
-          
-      </div>
       <!-- projects -->
       <div id = "projects">
-          
+          <h2>Videos</h2>
+          <p>I did some video production/editing as a part of my coursework in University.</p>
+          <iframe src="https://player.vimeo.com/video/38960974" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <p>
+            <a href="https://vimeo.com/38960974">SurrealCraft Final Cut</a> from <a href="https://vimeo.com/user10763588">M_c_Ruer</a> on <a href="https://vimeo.com">Vimeo</a>.
+          </p>
       </div>
       <!-- contact -->
       <div id = "contact">
         <div class="row">
             <div class="col-sm-6">
-                <h2>Social Media</h2>
+                <h2>Online Stuff</h2>
                 <ul>
+                    <li><a href="https://github.com/Nerdenator">GitHub</a></li>
                     <li>Google+</li>
-                    <li>Twitter</li>
-                    <li>GitHub</li>
                     <li>LinkedIn</li>
+                    <li>
+                        <a href="http://stackexchange.com/users/1414126/nerdenator">StackExchange</a>
+                        <ul>
+                            <li><a href="http://stackoverflow.com/users/1743837/nerdenator">StackOverflow</a>- or what you actually care about</li>
+                        </ul>                            
+                    </li>
+                    <li><a href="http://www.twitter.com/M_c_Ruer">Twitter</a>- not a public profile, but if you ask nicely...</li>
+                    <li>Facebook- naw.</li>
                 </ul>
             </div>
-            <div class="col-sm-6">.col-sm-6</div>
+            <div class="col-sm-6">
+                <h2>Electronic Mail</h2>
+                <label>Personal:</label>
+                    <a href="mailto:a.mcruer@live.com?subject=From_Personal_Website">a.mcruer@live.com</a>
+                <br/>
+                <label>Business:</label>
+                    <a href="mailto:cijjag@gmail.com?subject=From_Personal_Website">Gmail</a>
+            </div>
         </div>             
-      </div>
-      
+      </div>  
     </div>
   </body>
 </html>
