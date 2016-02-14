@@ -1,6 +1,6 @@
 
 var script = document.createElement('script');
-script.src = "https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"
+script.src = "https://code.jquery.com/ui/1.11.4/jquery-ui.min.js";
 script.type = 'text/javascript';
 document.getElementsByTagName('head')[0].appendChild(script);
 
