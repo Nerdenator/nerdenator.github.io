@@ -1,20 +1,145 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Welcome to my homepage.</title>
+    <title>Welcome to My Homepage.</title>
+    <!-- JQuery 1.12.0.min.js -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- JQuery UI 1.11 -->
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="scripts.js"></script>
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
-        <h1>I'm workin' here, I'm workin' here...</h1>
-        <p>More content coming soon.</p>
+        <br/>
+      <div class="row col-sm-12"></div>
+      <!--label for aaronmcruer.com here, to left of button group-->
+      <div class="row">
+        <div class="col-sm-12">
+            <!-- set it to be like btn-lg class in how the text is centered-->
+            <p style="display: inline-block; margin-bottom: 0; font-weight: normal; text-align: center; white-space: nowrap; vertical-align: middle;background-image: none; border: 1px solid transparent; padding: 10px 16px; font-size: 18px; line-height: 1.3333333;
+  border-radius: 6px;"><strong>aaronmcruer.com</strong></p>
+        <!--</div>
+        <div class="col-sm-10">-->
+            <button class="btn btn-lg" type="button" role="presenation" onclick="toggleAboutMe()" id="aboutMeButton">About Me</button>
+            <button class="btn btn-lg" type="button" role="presenation" onclick="toggleResume()" id="resumeButton">Resume</button>
+            <button class="btn btn-lg" type="button" role="presenation" onclick="toggleCode()" id="codeButton">Code</button>
+            <button class="btn btn-lg" type="button" role="presenation" onclick="toggleProjects()" id="projectsButton">Projects</button>
+            <button class="btn btn-lg" type="button" role="presenation" onclick="toggleContact()" id="contactButton">Contact</button>
+        </div>
       </div>
+      <!--<hr/>-->
+      <div id = "sectionHeader">          
+      </div>
+      <hr/>
+      <!-- about me-->
+      <div id = "aboutme" >
+          <div class="row">
+            <img class="col-sm-4" src="profile_pic.jpg" alt="Profile Pic" style="width:180px;height:180px;border-radius:100%">
+            <div class="col-sm-8">
+                <h3>Good day.</h3>
+                <p>I'm a guy in his 20s who wants to write code. Making a website means writing code, so I made one. Here you'll 
+                    find all of the stuff I've done throughout my admittedly short career. I was born and reside in the Northland of Kansas City, 
+                    Missouri. Please, take a look around, and make sure to check back later, as I'll be posting new stuff more and more often.
+                    <br/>
+                    <h3>Other assorted, mostly useless facts:</h3>
+                    <ul>
+                        <li>I drive a red domestic mid-sized sedan.</li>
+                        <li>I like cats better than I like most people.</li>
+                        <li>I think that Black Sabbath's <i>Dehumanizer</i> is under-appreciated and is the kind of album you can only get when you 
+                            have two major talents (Ronnie James Dio and Tony Iommi) butting heads in the studio, but when they're at a 
+                            stage in their careers when they know how to control their disdain instead of letting it consume them.
+                        </li>
+                        <li><i>The Venture Brothers</i> is the only TV show I have on DVD.</li>
+                    </ul>
+                </p>
+            </div>
+          </div>
+      </div>
+      <!-- resume -->
+      <div id = "resume">
+          <h2>Resume</h2>
+          <i>Resume coming soon.</i>
+      </div>
+      <!-- code -->
+      <div id = "code" class="row col-sm-12">
+          <h2>Python Astronomy library</h2>
+          <ul>
+            <li>A Python interpretation of the mathematics contained in 
+                <a href="http://www.amazon.com/gp/product/0521356997?psc=1&redirect=true&ref_=oh_aui_detailpage_o04_s00">Practical Astronomy with your Calculator</a>
+                by Peter Duffett-Smith. Currently looking for people to work on this with.
+            </li>
+            <li><a href="https://github.com/Nerdenator/python_astronomy">Python Astronomy GitHub link</a></li> 
+          </ul>
+          <h2>NFCare</h2>
+          <ul>
+            <li>A piece from my time in the Cult of Windows Phone, NFCare is a system for the tracking and tagging of NFC (Near-Field Communications) tags. It allows users to upload when and where they scanned an NFC tag to a database and said tags can be marked as malicious if they carry a malware payload. It was also a semester project for my C#, Web Development, and Cybersecurity classes. The project itself was implemented in C# for Windows Phone, PHP, HTML/JavaScript/CSS, Bootstrap, and SQL.
+            </li>
+            <li><i>Repository link coming soon.</i></li>
+          </ul>
+          <h2>Mileduino</h2>
+          <ul>
+            <li>My capstone project at the University of Missouri. Mileduino makes use of hardware controlled by an Arduino microcontroller that interfaces with the OBD2 CAN port on the underside of a car's dash. Using this and a GPS unit, the hardware can map the approximate fuel efficiency of a vehicle at a given point in its route. It also features a serial display in order to give real-time feedback to the driver. Mileduino also uses a web component developed by one of my teammates that displays this data on a map on a webpage based on the Ruby on Rails framework.
+            </li>
+            <li><a href="https://github.com/Nerdenator/mileduino">Mileduino GitHub link- microcontroller code</a></li>
+          </ul>
+      </div>
+      <!-- projects -->
+      <div id = "projects" class="row col-sm-12">
+          <h2>Videos</h2>
+          <p>I did some video production/editing as a part of my coursework in University.</p>
+          <iframe src="https://player.vimeo.com/video/38960974" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <p>
+            <a href="https://vimeo.com/38960974">SurrealCraft Final Cut</a> from <a href="https://vimeo.com/user10763588">M_c_Ruer</a> on <a href="https://vimeo.com">Vimeo</a>.
+          </p>
+          <h2>Electronics/Programming</h2>
+          <p>Some of these projects have their source code featured on the code tab.</p>
+          <h3>ACL Gold</h3>
+          <p>ACL Gold is a research project at the University of Missouri's <a href="http://eldertech.missouri.edu/docs/Gray%20-%20ACL.html">Center for Eldercare and Rehabilitation Technology</a> under the direction of Dr. Aaron Gray, MD and Dr. Marjorie Skubic, PhD. This project makes use of a Microsoft Kinect sensor to measure joint angles within the lower body during jumps to determine the likelihood of future ACL injuries in athletes, as posited by Dr. Timothy Hewitt's <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3096145/">paper</a> on the subject. My role was programming the application and testing it at the lab in conjunction with Dr. Erik Stone, PhD. The executable itself was a Windows program making use of WPF (Windows Presentation Foundation) and C#, developed in Visual Studio. The program was used in a long-term study to measure the effectiveness of such technology in prediction of future ACL injuries.</p>
+          <h3>Stovepop</h3>
+          <p>Stovepop is the name for my planned clustered compilation infrastructure, targeted at the building of customized Linux kernels. Stovepop has the following components:
+              <ul>
+                  <li>A front-end web browser application written in HTML5/CSS3/JavaScript that allows a GUI interface for the selection of kernel compilation options and control of the compilation process.</li>
+                  <li>A server-side web application written in Ruby on Rails and Bash that carries out the actual compilation and manages the storage of configuration information.</li>
+                  <li>A relational database management system (RDBMS) server that allows the storage of kernel compilation configurations so that they can be built on-demand and shared with other users.</li>
+                  <li>A cluster of servers using technologies like distcc and ccache to accelerate compilation of the kernel code.</li>
+              </ul>
+              Currently, Stovepop is in the planning and testing phase, using a small cluster made up of Raspberry Pi 2 nodes.
+        </p>
+      </div>
+      <!-- contact -->
+      <div id = "contact">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>Online Stuff</h2>
+                <ul>
+                    <li><a href="https://github.com/Nerdenator">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/aaron-mcruer-19585551">LinkedIn</a></li>
+                    <li>
+                        <a href="http://stackexchange.com/users/1414126/nerdenator">StackExchange</a>
+                        <ul>
+                            <li><a href="http://stackoverflow.com/users/1743837/nerdenator">StackOverflow</a>- or what you actually care about</li>
+                        </ul>                            
+                    </li>
+                    <li><a href="http://www.twitter.com/M_c_Ruer">Twitter</a>- not a public profile, but if you ask nicely...</li>
+                    <li>Facebook- naw.</li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <h2>Electronic Mail</h2>
+                <label>Personal:</label>
+                    <a href="mailto:a.mcruer@live.com?subject=From_Personal_Website">a.mcruer@live.com</a>
+                <br/>
+                <label>Business:</label>
+                    <a href="mailto:cijjag@gmail.com?subject=From_Personal_Website">Gmail</a>
+            </div>
+        </div>             
+      </div>  
     </div>
   </body>
 </html>
