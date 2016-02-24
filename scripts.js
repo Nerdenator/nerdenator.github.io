@@ -16,7 +16,10 @@ $(document).ready(function() {
     document.getElementById("sectionHeader").innerHTML = "<h1>About Me</h1>";
     document.title = 'Welcome to My Homepage.';
     $("#aboutMeButton").addClass("btn-primary");
-    
+    $("#resumeButton").removeClass("btn-primary");
+    $("#codeButton").removeClass("btn-primary");
+    $("#projectsButton").removeClass("btn-primary");
+    $("#contactButton").removeClass("btn-primary");
 });
 function toggleAboutMe(){
     $(document).ready(function() {
@@ -29,7 +32,10 @@ function toggleAboutMe(){
     $("#contact").hide();
     document.getElementById("sectionHeader").innerHTML = "<h1>About Me</h1>";
     $("#aboutMeButton").addClass("btn-primary");
-    
+    $("#resumeButton").removeClass("btn-primary");
+    $("#codeButton").removeClass("btn-primary");
+    $("#projectsButton").removeClass("btn-primary");
+    $("#contactButton").removeClass("btn-primary");
 }
 function toggleResume(){
     $(document).ready(function() {
@@ -41,7 +47,12 @@ function toggleResume(){
     $("#projects").hide();
     $("#contact").hide();
     document.getElementById("sectionHeader").innerHTML = "<h1>My Resume</h1>";
+    $("#aboutMeButton").removeClass("btn-primary");
     $("#resumeButton").addClass("btn-primary");
+    $("#codeButton").removeClass("btn-primary");
+    $("#projectsButton").removeClass("btn-primary");
+    $("#contactButton").removeClass("btn-primary");
+    
 }
 function toggleCode(){
     $(document).ready(function() {
@@ -53,7 +64,12 @@ function toggleCode(){
     $("#projects").hide();
     $("#contact").hide();
     document.getElementById("sectionHeader").innerHTML = "<h1>My Code</h1>";
+    $("#aboutMeButton").removeClass("btn-primary");
+    $("#resumeButton").removeClass("btn-primary");
     $("#codeButton").addClass("btn-primary");
+    $("#projectsButton").removeClass("btn-primary");
+    $("#contactButton").removeClass("btn-primary");
+    
 }
 function toggleProjects(){
     $(document).ready(function() {
@@ -65,7 +81,11 @@ function toggleProjects(){
     $("#projects").show();
     $("#contact").hide();
     document.getElementById("sectionHeader").innerHTML = "<h1>My Projects</h1>";
+    $("#aboutMeButton").removeClass("btn-primary");
+    $("#resumeButton").removeClass("btn-primary");
+    $("#codeButton").removeClass("btn-primary");
     $("#projectsButton").addClass("btn-primary");
+    $("#contactButton").removeClass("btn-primary");
 }
 function toggleContact(){
     $(document).ready(function() {
@@ -77,6 +97,10 @@ function toggleContact(){
     $("#projects").hide();
     $("#contact").show();
     document.getElementById("sectionHeader").innerHTML = "<h1>My Contact Info</h1>";
+    $("#aboutMeButton").removeClass("btn-primary");
+    $("#resumeButton").removeClass("btn-primary");
+    $("#codeButton").removeClass("btn-primary");
+    $("#projectsButton").removeClass("btn-primary");
     $("#contactButton").addClass("btn-primary");
 }
 
