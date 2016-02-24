@@ -11,11 +11,11 @@ $(document).ready(function() {
     $("#aboutme").show();
     $("#resume").hide();
     $("#code").hide();
-    $("#research").hide();
     $("#projects").hide();
     $("#contact").hide();
     document.getElementById("sectionHeader").innerHTML = "<h1>About Me</h1>";
     document.title = 'Welcome to My Homepage.';
+    $("#aboutMeButton").addClass("btn-primary");
     
 });
 function toggleAboutMe(){
@@ -25,10 +25,10 @@ function toggleAboutMe(){
     $("#aboutme").show();
     $("#resume").hide();
     $("#code").hide();
-    $("#research").hide();
     $("#projects").hide();
     $("#contact").hide();
     document.getElementById("sectionHeader").innerHTML = "<h1>About Me</h1>";
+    $("#aboutMeButton").addClass("btn-primary");
     
 }
 function toggleResume(){
@@ -38,11 +38,10 @@ function toggleResume(){
     $("#aboutme").hide();
     $("#resume").show();
     $("#code").hide();
-    $("#research").hide();
     $("#projects").hide();
     $("#contact").hide();
     document.getElementById("sectionHeader").innerHTML = "<h1>My Resume</h1>";
-    
+    $("#resumeButton").addClass("btn-primary");
 }
 function toggleCode(){
     $(document).ready(function() {
@@ -51,11 +50,10 @@ function toggleCode(){
     $("#aboutme").hide();
     $("#resume").hide();
     $("#code").show();
-    $("#research").hide();
     $("#projects").hide();
     $("#contact").hide();
     document.getElementById("sectionHeader").innerHTML = "<h1>My Code</h1>";
-    
+    $("#codeButton").addClass("btn-primary");
 }
 function toggleProjects(){
     $(document).ready(function() {
@@ -64,11 +62,10 @@ function toggleProjects(){
     $("#aboutme").hide();
     $("#resume").hide();
     $("#code").hide();
-    $("#research").hide();
     $("#projects").show();
     $("#contact").hide();
     document.getElementById("sectionHeader").innerHTML = "<h1>My Projects</h1>";
-    
+    $("#projectsButton").addClass("btn-primary");
 }
 function toggleContact(){
     $(document).ready(function() {
@@ -77,10 +74,9 @@ function toggleContact(){
     $("#aboutme").hide();
     $("#resume").hide();
     $("#code").hide();
-    $("#research").hide();
     $("#projects").hide();
     $("#contact").show();
     document.getElementById("sectionHeader").innerHTML = "<h1>My Contact Info</h1>";
-    
+    $("#contactButton").addClass("btn-primary");
 }
 
