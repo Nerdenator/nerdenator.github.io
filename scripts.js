@@ -31,11 +31,18 @@ function toggleAboutMe(){
     $("#projects").hide();
     $("#contact").hide();
     document.getElementById("sectionHeader").innerHTML = "<h1>About Me</h1>";
+    // set btn-primary class for active button
     $("#aboutMeButton").addClass("btn-primary");
+    // remove btn-primary for buttons not of the current div
     $("#resumeButton").removeClass("btn-primary");
+    $("#contactButton").removeClass("btn-primary");
     $("#codeButton").removeClass("btn-primary");
     $("#projectsButton").removeClass("btn-primary");
-    $("#contactButton").removeClass("btn-primary");
+    // add btn-secondary classes
+    $("#resumeButton").addClass("btn-secondary");    
+    $("#codeButton").addClass("btn-secondary");    
+    $("#projectsButton").addClass("btn-secondary");    
+    $("#contactButton").addClass("btn-secondary");
 }
 function toggleResume(){
     $(document).ready(function() {
@@ -52,6 +59,12 @@ function toggleResume(){
     $("#codeButton").removeClass("btn-primary");
     $("#projectsButton").removeClass("btn-primary");
     $("#contactButton").removeClass("btn-primary");
+    
+    // add btn-secondary classes
+    $("#aboutMeButton").addClass("btn-secondary");    
+    $("#codeButton").addClass("btn-secondary");    
+    $("#projectsButton").addClass("btn-secondary");    
+    $("#contactButton").addClass("btn-secondary");
     
 }
 function toggleCode(){
@@ -70,6 +83,12 @@ function toggleCode(){
     $("#projectsButton").removeClass("btn-primary");
     $("#contactButton").removeClass("btn-primary");
     
+    // add btn-secondary classes
+    $("#aboutMeButton").addClass("btn-secondary");    
+    $("#resumeButton").addClass("btn-secondary");
+    $("#projectsButton").addClass("btn-secondary");    
+    $("#contactButton").addClass("btn-secondary");
+    
 }
 function toggleProjects(){
     $(document).ready(function() {
@@ -81,11 +100,18 @@ function toggleProjects(){
     $("#projects").show();
     $("#contact").hide();
     document.getElementById("sectionHeader").innerHTML = "<h1>My Projects</h1>";
+    
     $("#aboutMeButton").removeClass("btn-primary");
     $("#resumeButton").removeClass("btn-primary");
     $("#codeButton").removeClass("btn-primary");
     $("#projectsButton").addClass("btn-primary");
     $("#contactButton").removeClass("btn-primary");
+    
+    // add btn-secondary classes
+    $("#aboutMeButton").addClass("btn-secondary");
+    $("#resumeButton").addClass("btn-secondary");
+    $("#codeButton").addClass("btn-secondary");
+    $("#contactButton").addClass("btn-secondary");
 }
 function toggleContact(){
     $(document).ready(function() {
@@ -102,5 +128,11 @@ function toggleContact(){
     $("#codeButton").removeClass("btn-primary");
     $("#projectsButton").removeClass("btn-primary");
     $("#contactButton").addClass("btn-primary");
+    
+    // add btn-secondary classes
+    $("#aboutMeButton").addClass("btn-secondary");
+    $("#resumeButton").addClass("btn-secondary");
+    $("#codeButton").addClass("btn-secondary");
+    $("#projectsButton").addClass("btn-secondary");
 }
 
