@@ -100,7 +100,6 @@ function toggleProjects(){
     $("#projects").show();
     $("#contact").hide();
     document.getElementById("sectionHeader").innerHTML = "<h1>My Projects</h1>";
-    
     $("#aboutMeButton").removeClass("btn-primary");
     $("#resumeButton").removeClass("btn-primary");
     $("#codeButton").removeClass("btn-primary");
