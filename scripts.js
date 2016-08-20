@@ -60,7 +60,7 @@ function toggleProjects(){
     showSection("#projects");
     document.getElementById("sectionHeader").innerHTML = "<h1>My Projects</h1>";
     secondaryButton();
-    primaryButton("#codeButton");
+    primaryButton("#projectsButton");
 }
 
 function toggleContact(){
